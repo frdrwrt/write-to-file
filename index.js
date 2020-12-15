@@ -8,6 +8,8 @@ try {
   const filepath = core.getInput("filepath");
   const content = core.getInput("content");
   const mode = core.getInput("mode") || 600;
+  console.log('Filepath: ', filepath);
+  console.log('Mode: ', mode)
 
   const dir = path.dirname(filepath);
 
@@ -17,8 +19,6 @@ try {
 
   fs.writeFileSync(filepath, content + os.EOL, { mode });
 
-  const payload = JSON.stringify(github.context.payload, undefined, 2);
-  console.log(`The event payload: ${payload}`);
 } catch (error) {
   core.setFailed(error.message);
 }
