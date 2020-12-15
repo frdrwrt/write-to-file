@@ -1,5 +1,7 @@
 name: "Write to file"
 description: "Write content to file"
+icon: arrow-down-circle
+color: gray-dark
 inputs:
   filepath:
     description: 'Where to create the file'

@@ -10,7 +10,11 @@ try {
   const mode = core.getInput("mode") || 600;
 
   const dir = path.dirname(filepath);
-  dir ?? fs.mkdirSync(dir, { recursive: true });
+  
+  if (dir) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+
   fs.writeFileSync(filepath, content + os.EOL, { mode });
 
   const payload = JSON.stringify(github.context.payload, undefined, 2);
