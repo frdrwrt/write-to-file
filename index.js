@@ -10,7 +10,7 @@ try {
   const mode = core.getInput("mode") || 600;
 
   const dir = path.dirname(filepath);
-  
+
   if (dir) {
     fs.mkdirSync(dir, { recursive: true });
   }
