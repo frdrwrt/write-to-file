@@ -1,0 +1,21 @@
+{
+  "name": "write-to-file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frdrwrt/write-to-file.git"
+  },
+  "keywords": [],
+  "author": "frdrwrt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frdrwrt/write-to-file/issues"
+  },
+  "homepage": "https://github.com/frdrwrt/write-to-file#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  }
+}

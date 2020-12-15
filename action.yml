@@ -1,0 +1,16 @@
+name: "Write to file"
+description: "Write content to file"
+inputs:
+  filepath:
+    description: 'Where to create the file'
+    required: true
+    default: file
+  content:
+    description: 'What to write to file'
+    required: true
+  mode:
+    description: 'Set file permissions (default 0600)'
+    required: false
+runs: 
+  using: 'node12'
+  main: 'index.js'
